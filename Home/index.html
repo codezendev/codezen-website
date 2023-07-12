@@ -6,11 +6,13 @@
     <!-- fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,600;1,600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/nevbar.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <title>Document</title>
 </head>
 <body>
-    <!--Nev Bar do Site-->
+    <!--Nav Bar do Site-->
     <header class="header">
         <nav class="navigation">
             <a href="#" class="logo"><img src="../img/logo (1).png" alt="logo"></a>
@@ -36,5 +38,47 @@
             </div>
         </section>
     </main>
+    
+
+    <!--Formulário para contato-->
+    <section class="form">
+        <div class="form-contact">
+            <h2>Número dos desenvolvedores para contato:</h2>
+            <h3>André: (85) 99282-3062</h3>
+            <h3>Christian: (85) xxxxx-xxxx</h3>
+            <h2>E-mail:</h2>
+            <h3>andrefonteneledev@gmail.com</h3>
+        </div>
+    
+        <div class="form-group">
+        <form action="https://formsubmit.co/codezen.dev@gmail.com" method="POST">
+                <label for="name">Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome" id="name" required>
+                    </input>
+                <label for="email">E-mail de contato</label>
+                    <input type="email" name="email" placeholder="Digite seu e-mail" id="email" required>
+                    </input>
+                <label for="message">Mensagem</label>         
+                    <textarea name="message" placeholder="Digite sua mensagem" id="message"></textarea>
+                    <input type="hidden" name="_captcha" value="false"></input>
+
+                <div class="submit-button">
+                    <input 
+  type="hidden" 
+  name="_next" 
+  value="/agradecimento.html">
+</input>
+
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+            </div>
+    </section>
+
+    <section class="footer">
+        <p>LINKEDIN</p>
+        <p>&copy CodeZen Development. 2023</p>
+        <p>Todos os direitos reservados.</p>
+    </section>
 </body>
 </html>

@@ -8,10 +8,8 @@
 }
 body{
     background:linear-gradient(0deg, rgb(255, 250, 250) 0%, rgb(221, 218, 218) 100%);
-    overflow: hidden;
 }
 .header{
-    position: fixed;
     width: 100%;
     padding: 5px 100px;
 }
@@ -23,7 +21,6 @@ body{
     display: flex;
     align-items:center;
     justify-content:space-between;
-    
 }
 .logo img{
     position: 50px;
@@ -44,21 +41,17 @@ body{
 .navigation ul li a:hover{
     border-bottom: 3px solid rgb(221, 168, 21);
 }
-.main{
-    overflow: hidden;
-}
+
 .section{
     padding: 8rem;
     height: 100vh;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .left{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: block;
+    margin-bottom: 300px;
 }
 .left p{
     font-size: 7.8rem;
@@ -86,17 +79,23 @@ body{
 .btn:hover{
     box-shadow: 0 1px 4px #1c683f;
 }
+
+.right{
+    display: block;
+    margin-bottom: 400px;
+}
 .right img{
     width: 500px;
-    margin-bottom: 1rem;
+    height: 450px;
     animation: float 1.8s infinite alternate;
+    display: block;
 }
 .shadow{
-    width: 450px;
+    width: 500px;
+    height: 450px;
     height: 45px;
     background: hsla(38, 21%, 19%, .16);
     border-radius: 50%;
-    margin: 0 auto;
     filter: blur(5px);
     animation: shadow 1.8s infinite alternate;
 }
