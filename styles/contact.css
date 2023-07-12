@@ -1,0 +1,57 @@
+.form{
+    display: flex;
+    margin-top: 200px;
+    width: 50vw;
+    margin: auto;
+}
+
+.form-group{
+    width: 50vw;
+
+}
+
+.form-group input,
+.form-group label,
+.form-group textarea,
+.form-group button {
+    display: block;
+    width: 70%;
+}
+
+.form-group input,
+.form-group textarea{
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: 0.6s;
+}
+
+.form-group textarea{
+    min-height: 13rem;
+    resize: vertical;
+}
+
+.form-group input:hover,
+.form-group input:focus,
+.form-group textarea:hover,
+.form-group textarea:focus{
+    outline: none;
+    border-color: #09d;
+    box-shadow: 0 0 0 3px #4dc8ff;
+}
+
+
+.form-contact{
+    font-size: 15px;
+    margin-right: 50px;
+    border-right: 1px solid gray;
+}
+
+.form-contact h2,
+.form-contact h3{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
