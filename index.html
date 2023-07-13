@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,600;1,600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
     <!--Arquivos com os estilos-->
-    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/navbar-home.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="./styles/services.css">
@@ -21,21 +21,21 @@
         <nav class="navigation">
             <a href="#" class="logo"><img src="./img/logo (1).png" alt="logo"></a>
                 <ul>
-                    <li><a href="#" class="text">Home</a></li>
-                    <li><a href="#" class="text">Serviços</a></li>
-                    <li><a href="#" class="text">Projetos</a></li>
-                    <li><a href="#" class="text">Colaboradores</a></li>
-                    <li><a href="#" class="text">Contato</a></li>
+                    <li><a href="#main" class="text">Home</a></li>
+                    <li><a href="#services" class="text">Serviços</a></li>
+                    <li><a href="#projects" class="text">Projetos</a></li>
+                    <li><a href="#colabs" class="text">Colaboradores</a></li>
+                    <li><a href="#form" class="text">Contato</a></li>
                 </ul>
             </a>
         </nav>
     </header>
     <!--Primeira parte da Home-->
-    <main class="main">
+    <main class="main" id="main">
         <section class="HomeSection">
             <div class="left">
                 <p>CodeZen</p>
-                <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate nulla voluptatum earum. Consequuntur, repudiandae enim!</h1>
+                <h1>Somos uma empresa de desenvolvimento freelance composta por estudantes. Combinando nossa paixão pela tecnologia e nossa busca constante por aprendizado, estamos constantemente aperfeiçoando nossas habilidades para fornecer o melhor serviço possível aos nossos clientes.</h1>
                 <a href="#" class="btn">Entre em contato</a>
             </div>
             <div class="right">
@@ -46,21 +46,31 @@
     </main>
 
     <!--Parte dos serviços-->
-    <h1 class="text">Serviços</h1>
-    <section>
+    <h1 class="text" id="services">Serviços</h1>
+    <section class="services">
+
         <div class="container">
           <div class="card">
             <div class="front">
               <div class="content">
                 <img src="./img/project-management.png" />
-                <h3>Tecnologias</h3>
+                <h3>Tecnologias que utilizamos</h3>
               </div>
             </div>
             <div class="back">
               <div class="content">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
-                  nam expedita exercitationem?
+                  <ul>
+                    <li>HTML5</li>
+                    <br>
+                    <li>CSS3</li>
+                    <br>
+                    <li>JavaScript</li>
+                    <br>
+                    <li>Node.Js</li>
+                    <br>
+                    <li>MySQL</li>
+                  </ul>
                 </p>
               </div>
             </div>
@@ -105,27 +115,128 @@
       </section>
        
     <!--Parte dos Projetos-->
-    <h1 class="text">Projetos</h1>
-    <section>
+    <h1 class="text" id="projects">Projetos</h1>
+    <section class="services">
+      <div class="container">
+        <div class="card">
+          <div class="front">
+            <div class="content">
+              <img src="./img/project-management.png" />
+              <h3>Tecnologias que utilizamos</h3>
+            </div>
+          </div>
+          <div class="back">
+            <div class="content">
+              <p>
+                <a href="https://www.youtube.com/watch?v=0dLX40UMUKo&embeds_widget_referrer=https%3A%2F%2F880218394199220334.discordsays.com&embeds_referring_euri=https%3A%2F%2F880218394199220334.discordsays.com%2F&embeds_referring_origin=https%3A%2F%2F880218394199220334.discordsays.com&source_ve_path=MA&feature=emb_rel_end&ab_channel=RadarRecordsOficial">AOBA</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="front">
+            <div class="content">
+              <img src="./img/coding.png" />
+              <h3>Desenvolvimento web</h3>
+            </div>
+          </div>
+          <div class="back">
+            <div class="content">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                nam expedita exercitationem?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="front">
+            <div class="content">
+              <img src="./img/rocket.png" />
+              <h3>.....</h3>
+            </div>
+          </div>
+          <div class="back">
+            <div class="content">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                nam expedita exercitationem?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </section>
 
     <!--Parte dos Colaboradores-->
+    <h1 class="text" id="colabs">Colaboradores</h1>
     <section>
-
+      <section class="services">
+        <div class="container">
+          <div class="card">
+            <div class="front">
+              <div class="content">
+                <img src="./img/project-management.png" />
+                <h3>Tecnologias que utilizamos</h3>
+              </div>
+            </div>
+            <div class="back">
+              <div class="content">
+                <p>
+                  <a href="https://www.youtube.com/watch?v=0dLX40UMUKo&embeds_widget_referrer=https%3A%2F%2F880218394199220334.discordsays.com&embeds_referring_euri=https%3A%2F%2F880218394199220334.discordsays.com%2F&embeds_referring_origin=https%3A%2F%2F880218394199220334.discordsays.com&source_ve_path=MA&feature=emb_rel_end&ab_channel=RadarRecordsOficial">AOBA</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="front">
+              <div class="content">
+                <img src="./img/coding.png" />
+                <h3>Desenvolvimento web</h3>
+              </div>
+            </div>
+            <div class="back">
+              <div class="content">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  nam expedita exercitationem?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="front">
+              <div class="content">
+                <img src="./img/rocket.png" />
+                <h3>.....</h3>
+              </div>
+            </div>
+            <div class="back">
+              <div class="content">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  nam expedita exercitationem?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
     
 
     <!--Formulário para contato-->
-    <!-- <section class="form">
-        <div class="form-contact">
-            <h2>Número dos desenvolvedores para contato:</h2>
-            <h3>André: (85) 99282-3062</h3>
-            <h3>Christian: (85) xxxxx-xxxx</h3>
-            <h2>E-mail:</h2>
-            <h3>andrefonteneledev@gmail.com</h3>
-        </div>
-    
+    <h1 class="text" id="contact">Contato</h1>
+    <section class="form"> 
         <div class="form-group">
         <form action="https://formsubmit.co/codezen.dev@gmail.com" method="POST">
                 <label for="name">Nome</label>
@@ -144,13 +255,12 @@
                 </div>
             </form>
             </div>
-    </section> -->
+    </section> 
 
-   <!-- Parte do Footer
     <section class="footer">
         <p>LINKEDIN</p>
         <p>&copy CodeZen Development. 2023</p>
         <p>Todos os direitos reservados.</p>
-    </section> -->
+    </section> 
 </body>
 </html>
