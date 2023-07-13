@@ -1,16 +1,17 @@
-
   .text{
     text-align: center;
     font-family:'Bebas Neue', sans-serif;
     font-size: 5rem;
   }
 
-  section {
-    height: 100vh;
+  .services {
+    height: 50vh;
     display: flex;
     padding: 0 4em;
     justify-content: space-around;
     align-items: center;
+    border-top: 1px solid black;
+    margin-bottom: 100px;
   }
   .container {
     perspective: 1000px;

@@ -1,13 +1,13 @@
 .form{
-    display: flex;
-    margin-top: 200px;
+    display: auto;
     width: 50vw;
     margin: auto;
+    border-top: 1px solid black;
 }
 
-.form-group{
+.form-contact, .form-group{
     width: 50vw;
-
+    margin-top: 50px;
 }
 
 .form-group input,
@@ -42,16 +42,11 @@
     box-shadow: 0 0 0 3px #4dc8ff;
 }
 
-
-.form-contact{
-    font-size: 15px;
-    margin-right: 50px;
-    border-right: 1px solid gray;
+.form-group{
+    margin-left: 150px;
 }
 
-.form-contact h2,
-.form-contact h3{
-    display: block;
-    width: 100%;
-    margin: auto;
+button{
+    padding: 15px;
+    border-radius: 15px;
 }
