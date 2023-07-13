@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,600;1,600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <!--Arquivos com os estilos-->
     <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/services.css">
     <title>CodeZen</title>
 </head>
 <body>
     <!--Nav Bar do Site-->
     <header class="header">
         <nav class="navigation">
-            <a href="#" class="logo"><img src="../img/logo (1).png" alt="logo"></a>
+            <a href="#" class="logo"><img src="./img/logo (1).png" alt="logo"></a>
                 <ul>
                     <li><a href="#" class="text">Home</a></li>
+                    <li><a href="#" class="text">Serviços</a></li>
                     <li><a href="#" class="text">Projetos</a></li>
+                    <li><a href="#" class="text">Colaboradores</a></li>
                     <li><a href="#" class="text">Contato</a></li>
                 </ul>
             </a>
@@ -26,22 +32,92 @@
     </header>
     <!--Primeira parte da Home-->
     <main class="main">
-        <section class="section">
+        <section class="HomeSection">
             <div class="left">
                 <p>CodeZen</p>
                 <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate nulla voluptatum earum. Consequuntur, repudiandae enim!</h1>
                 <a href="#" class="btn">Entre em contato</a>
             </div>
             <div class="right">
-                <img src="../img/logo (1).png" alt="img">
+                <img src="./img/logo (1).png" alt="img">
                 <div class="shadow"></div>
             </div>
         </section>
     </main>
+
+    <!--Parte dos serviços-->
+    <h1 class="text">Serviços</h1>
+    <section>
+        <div class="container">
+          <div class="card">
+            <div class="front">
+              <div class="content">
+                <img src="./img/project-management.png" />
+                <h3>Tecnologias</h3>
+              </div>
+            </div>
+            <div class="back">
+              <div class="content">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  nam expedita exercitationem?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="front">
+              <div class="content">
+                <img src="./img/coding.png" />
+                <h3>Dsenvolvimento web</h3>
+              </div>
+            </div>
+            <div class="back">
+              <div class="content">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  nam expedita exercitationem?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="front">
+              <div class="content">
+                <img src="./img/rocket.png" />
+                <h3>.....</h3>
+              </div>
+            </div>
+            <div class="back">
+              <div class="content">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  nam expedita exercitationem?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+    <!--Parte dos Projetos-->
+    <h1 class="text">Projetos</h1>
+    <section>
+
+    </section>
+
+    <!--Parte dos Colaboradores-->
+    <section>
+
+    </section>
     
 
     <!--Formulário para contato-->
-    <section class="form">
+    <!-- <section class="form">
         <div class="form-contact">
             <h2>Número dos desenvolvedores para contato:</h2>
             <h3>André: (85) 99282-3062</h3>
@@ -68,12 +144,13 @@
                 </div>
             </form>
             </div>
-    </section>
+    </section> -->
 
+   <!-- Parte do Footer
     <section class="footer">
         <p>LINKEDIN</p>
         <p>&copy CodeZen Development. 2023</p>
         <p>Todos os direitos reservados.</p>
-    </section>
+    </section> -->
 </body>
 </html>
