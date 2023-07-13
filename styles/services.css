@@ -1,0 +1,70 @@
+
+  .text{
+    text-align: center;
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 5rem;
+  }
+
+  section {
+    height: 100vh;
+    display: flex;
+    padding: 0 4em;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container {
+    perspective: 1000px;
+    height: 28vh;
+    width: 50vh;
+    cursor: pointer;
+  }
+  .card {
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+  }
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.4em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+  }
+  .front {
+    background: linear-gradient(to right, #b5b3b6, #4b4a4d);
+  }
+  .front img {
+    width: 5em;
+  }
+  .content {
+    transform: translateZ(60px);
+  }
+  .content h3 {
+    font-size: 22px;
+    margin-top: 1em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .content p {
+    font-size: 14px;
+    line-height: 2em;
+    letter-spacing: 0.02em;
+    padding: 0 3em;
+  }
+  .back {
+    background-color: #38383a;
+    transform: rotateX(180deg);
+  }
+  .container:hover .card {
+    transform: rotateX(180deg);
+  }
