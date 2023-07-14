@@ -25,18 +25,64 @@
     font-family:  'Crimson Text', serif;
 }
 
-.btn{
-    padding: 1.5rem 5rem;
-    background:linear-gradient(0deg, rgba(240, 176, 0, 0.856) 0%, rgba(253, 215, 0, 0.808) 100%);
-    border-radius: 40vh;
-    color: #fffafa;
-    font-size: 1.2rem;
-    font-weight: 700;
-    transition: all 0.3s ease;
+.btn-flip{
+	opacity: 1;
+	outline: 0;
+	color: #fff;
+	line-height: 40px;
+	position: relative;
+	text-align: center;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Open Sans';
+	text-transform: uppercase;
+	
+	&:hover{
+		
+		&:after{
+			opacity: 1;
+			transform: translateY(0) rotateX(0);
+		}
+		
+		&:before{
+			opacity: 0;
+			transform: translateY(50%) rotateX(90deg);
+		}
+	}
+	
+	&:after{
+		top: 0;
+		left: 0;
+		opacity: 0;
+		width: 100%;
+		color: #b3b1b1;
+		display: block;
+		transition: 0.5s;
+		position: absolute;
+		background: #656566;
+		content: attr(data-back);
+		transform: translateY(-50%) rotateX(90deg);
+        border-radius: 50px;
+	}
+	
+	&:before{
+		top: 0;
+		left: 0;
+		opacity: 1;
+		color: #adadaf;
+		display: block;
+		padding: 0 30px;
+		line-height: 40px;
+		transition: 0.5s;
+		position: relative;
+		background: #323237;
+		content: attr(data-front);
+		transform: translateY(0) rotateX(0);
+        border-radius: 50px;
+	}
 }
-.btn:hover{
-    box-shadow: 0 1px 4px #ff0202;
-}
+
 
 .right{
     display: block;

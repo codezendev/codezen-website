@@ -7,6 +7,7 @@ function activeHeaderScroll(){
 
 window.addEventListener('scroll', activeHeaderScroll);
 
+// Para o Nome do CodeZen
 function typeWriter(element){
     const textArray = element.innerHTML.split('')
     element.innerHTML = ''
@@ -20,3 +21,4 @@ function typeWriter(element){
 }
 
 typeWriter(element);
+
