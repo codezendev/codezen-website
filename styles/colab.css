@@ -4,7 +4,7 @@
     width: 100%;
     overflow: hidden;
     padding: 80px 0;
-    margin-left: 200px;
+    margin-left: 360px;
     border-top: 1px solid black;
   }
   .container3 .main-card{
@@ -97,7 +97,7 @@
     height: 15px;
     width: 15px;
     border-radius: 20px;
-    background: #fff;
+    background: #474545;
     margin: 0 4px;
     cursor: pointer;
     transition: all 0.5s ease;

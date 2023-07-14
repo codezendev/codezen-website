@@ -10,38 +10,43 @@
 
     <!--Icones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="icon" type="image/png"  href="./img/android-chrome-192x192.png">
 
     <!--Arquivos com os estilos-->
-    <link rel="stylesheet" href="./styles/navbar-home.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="./styles/services.css">
     <link rel="stylesheet" href="./styles/project.css">
     <link rel="stylesheet" href="./styles/colab.css">
+    <link rel="stylesheet" href="./styles/home.css">
     <title>CodeZen</title>
 </head>
 <body>
     <!--Nav Bar do Site-->
     <header class="header">
-        <nav class="navigation">
-            <a href="#" class="logo"><img src="./img/logo (1).png" alt="logo"></a>
-                <ul>
-                    <li><a href="#main" class="text">Home</a></li>
-                    <li><a href="#services" class="text">Serviços</a></li>
-                    <li><a href="#projects" class="text">Projetos</a></li>
-                    <li><a href="#colabs" class="text">Colaboradores</a></li>
-                    <li><a href="#contact" class="text">Contato</a></li>
-                </ul>
-            </a>
-        </nav>
-    </header>
+      <div class="logo">
+        <a href="#main" class="logo"><img src="./img/logo (1).png" alt="logo"></a>
+      </div>
+      <nav>
+         <ul class="nav-links">
+          <li><a href="#main">Home</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#colabs">Colaboradores</a></li>
+         </ul>            
+      </nav>
+      <a class="btn2" href="#contact"><button>Contato</button></a>
+  </header>
+ 
     <!--Primeira parte da Home-->
     <main class="main" id="main">
         <section class="HomeSection">
             <div class="left">
-                <p>CodeZen</p>
+                <p class="title">CodeZen</p>
                 <h1>Somos uma empresa de desenvolvimento freelance composta por estudantes. Combinando nossa paixão pela tecnologia e nossa busca constante por aprendizado, estamos constantemente aperfeiçoando nossas habilidades para fornecer o melhor serviço possível aos nossos clientes.</h1>
-                <a href="#" class="btn">Entre em contato</a>
+                <a href="#contact" class="btn">Entre em contato</a>
             </div>
             <div class="right">
                 <img src="./img/logo (1).png" alt="img">
@@ -51,9 +56,7 @@
     </main>
 
     <!--Parte dos serviços-->
-    <h1 class="text" id="services">Serviços</h1>
-    <hr>
-    <section class="services">
+    <section class="services" id="services">
 
         <div class="container">
           <div class="card">
@@ -121,15 +124,14 @@
       </section>
        
     <!--Parte dos Projetos-->
-    <h1 class="text1" id="projects">Projetos</h1>
-    <section class="project">
+    <section class="project" id="projects">
 
      <div class="card2 card-1">
       <div class="card-header">
         <img src="" class="card-img" />
       </div>
       <div class="card-body">
-        <h3 class="card-local">Titulo</h3>
+        <!-- <h3 class="card-local">Titulo</h3> -->
         <h2 class="card-titulo">........</h2>
         <p class="card-texto">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio libero saepe quo excepturi quisquam, dolores doloremque cupiditate adipisci
@@ -137,7 +139,8 @@
         </p>
       </div>
       <div class="card-footer">
-        <a href="#">Ver Mais</a>
+        <a href="#" target="_blank"><ion-icon name="eye-outline"></ion-icon>Ver projeto</a>
+        <a href="#" target="_blank"><ion-icon name="code-slash-outline"></ion-icon>Ver código</a>
       </div>
     </div>
   
@@ -155,7 +158,8 @@
         </p>
       </div>
       <div class="card-footer">
-        <a href="#">Ver Mais</a>
+        <a href="#" target="_blank"><ion-icon name="eye-outline"></ion-icon>Ver projeto</a>
+        <a href="#" target="_blank"><ion-icon name="code-slash-outline"></ion-icon>Ver código</a>
       </div>
     </div>
   
@@ -173,14 +177,15 @@
         </p>
       </div>
       <div class="card-footer">
-        <a href="#">Ver Mais</a>
+        <a href="#" target="_blank"><ion-icon name="eye-outline"></ion-icon>Ver projeto</a>
+        <a href="#" target="_blank"><ion-icon name="code-slash-outline"></ion-icon>Ver código</a>
+    </div>      
       </div>
     </div>
     </section>
 
     <!--Parte dos Colaboradores-->
-    <h1 class="text" id="colabs">Colaboradores</h1>
-    <section class="colaboradores"> 
+    <section class="colaboradores" id="colabs"> 
       <div class="container3">
         <input type="radio" name="dot" id="one">
         <input type="radio" name="dot" id="two">
@@ -258,8 +263,7 @@
     
 
     <!--Formulário para contato-->
-    <h1 class="text" id="contact">Contato</h1>
-    <section class="form"> 
+    <section class="form" id="contact"> 
         <div class="form-group">
         <form action="https://formsubmit.co/codezen.dev@gmail.com" method="POST">
                 <label for="name">Nome</label>
@@ -284,5 +288,9 @@
         <p>&copy CodeZen Development. 2023</p>
         <p>Todos os direitos reservados.</p>
     </section> 
+
+
+<!--JavaScript do Site-->
+<script src="./javascript/index.js"></script>
 </body>
 </html>

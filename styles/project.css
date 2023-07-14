@@ -3,9 +3,8 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 80px;
+    margin-top: 30vh;
     margin-bottom: 160px;
-    border-top:1px solid #000;
   }
 .text1{
    text-align: center;
@@ -51,6 +50,7 @@
   }
   
   .card-titulo {
+    border-top: 1px solid black;
     font-size: 32px;
     margin: 15px 0;
   }
@@ -61,24 +61,31 @@
     margin: 0 auto;
   }
   
-  /* Card Footer */
-  .card-footer {
-    margin-left: 100px;
-    width: 200px;
-    background: linear-gradient(0deg, rgba(255, 196, 33, 0.856) 0%, rgba(218, 188, 22, 0.808) 100%);
-    margin-top: 60px;
-    text-align: center;
-    background-color: #000;
-    border-radius: 50px;
+  /* Card Footer = parte dos buttons */
+  .card-footer{
+    display: flex;
+    align-items: center;
+    padding: 1.3rem;
+    gap: 1rem;
+    margin-left: 30px;
+    margin-top: 1px;
   }
   
   .card-footer a {
-    color: #fff;
-    display: block;
-    padding: 16px;
     text-decoration: none;
-    font-family: sans-serif;
-    font-weight: 600;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 1rem 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    transition: 0.5s;
+  }
+  .card-footer a:hover{
+    background-color: rgba(255, 255, 255, 0.26);
   }
   
   
